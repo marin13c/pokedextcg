@@ -8,7 +8,8 @@ export default function Home() {
   const [tab, setTab] = useState<"buscar" | "progreso" | "obtenidos">("buscar");
 
   useEffect(() => {
-    fetch("/api/pokemons")
+    // Cargar el JSON desde la carpeta public
+    fetch("/pokemons.json")  // Asegúrate de que la ruta sea correcta
       .then((res) => res.json())
       .then((data) => setPokemons(data))
       .catch((err) => console.error("Error al cargar los Pokémon", err));

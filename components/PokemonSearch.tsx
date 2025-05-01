@@ -1,4 +1,3 @@
-// components/PokemonSearch.tsx
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
@@ -12,6 +11,14 @@ export default function PokemonSearch({
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState<any>(null);
 
+  useEffect(() => {
+    // Cargar el JSON desde la carpeta public
+    fetch("/pokemons.json")  // Asegúrate de que la ruta sea correcta
+      .then((response) => response.json())
+      .then((data) => setPokemons(data))
+      .catch((error) => console.error("Error al cargar el JSON:", error));
+  }, []);
+
   const filtered = pokemons.filter((p) =>
     p.Nombre.toLowerCase().includes(search.toLowerCase())
   );
@@ -22,43 +29,21 @@ export default function PokemonSearch({
   };
 
   const markAsObtained = async () => {
-    const res = await fetch("/api/update", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ Nombre: selected.Nombre }),
-    });
-    const result = await res.json();
-
-    if (result.success) {
-      toast.success(`¡${selected.Nombre} marcado como obtenido!`);
-      const updated = pokemons.map((p) =>
-        p.Nombre === selected.Nombre ? { ...p, Obtenido: 1 } : p
-      );
-      setPokemons(updated);
-      setSelected({ ...selected, Obtenido: 1 });
-    } else {
-      toast.error("Error al marcar como obtenido.");
-    }
+    const updatedPokemons = pokemons.map((p) =>
+      p.Nombre === selected.Nombre ? { ...p, Obtenido: 1 } : p
+    );
+    setPokemons(updatedPokemons);
+    setSelected({ ...selected, Obtenido: 1 });
+    toast.success(`¡${selected.Nombre} marcado como obtenido!`);
   };
 
   const unmarkAsObtained = async () => {
-    const res = await fetch("/api/update", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ Nombre: selected.Nombre }),
-    });
-    const result = await res.json();
-
-    if (result.success) {
-      toast.success(`¡${selected.Nombre} desmarcado como obtenido!`);
-      const updated = pokemons.map((p) =>
-        p.Nombre === selected.Nombre ? { ...p, Obtenido: 0 } : p
-      );
-      setPokemons(updated);
-      setSelected({ ...selected, Obtenido: 0 });
-    } else {
-      toast.error("Error al desmarcar como obtenido.");
-    }
+    const updatedPokemons = pokemons.map((p) =>
+      p.Nombre === selected.Nombre ? { ...p, Obtenido: 0 } : p
+    );
+    setPokemons(updatedPokemons);
+    setSelected({ ...selected, Obtenido: 0 });
+    toast.success(`¡${selected.Nombre} desmarcado como obtenido!`);
   };
 
   return (

@@ -1,0 +1,759 @@
+[
+  {
+    "Nº": 1,
+    "Nombre": "Bulbasaur",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 2,
+    "Nombre": "Ivysaur",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 3,
+    "Nombre": "Venusaur",
+    "Obtenido": 0,
+    "__EMPTY_1": "Obtenidos",
+    "__EMPTY_2": 11
+  },
+  {
+    "Nº": 4,
+    "Nombre": "Charmander",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 5,
+    "Nombre": "Charmeleon",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 6,
+    "Nombre": "Charizard",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 7,
+    "Nombre": "Squirtle",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 8,
+    "Nombre": "Wartortle",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 9,
+    "Nombre": "Blastoise",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 10,
+    "Nombre": "Caterpie",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 11,
+    "Nombre": "Metapod",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 12,
+    "Nombre": "Butterfree",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 13,
+    "Nombre": "Weedle",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 14,
+    "Nombre": "Kakuna",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 15,
+    "Nombre": "Beedrill",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 16,
+    "Nombre": "Pidgey",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 17,
+    "Nombre": "Pidgeotto",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 18,
+    "Nombre": "Pidgeot",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 19,
+    "Nombre": "Rattata",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 20,
+    "Nombre": "Raticate",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 21,
+    "Nombre": "Spearow",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 22,
+    "Nombre": "Fearow",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 23,
+    "Nombre": "Ekans",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 24,
+    "Nombre": "Arbok",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 25,
+    "Nombre": "Pikachu",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 26,
+    "Nombre": "Raichu",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 27,
+    "Nombre": "Sandshrew",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 28,
+    "Nombre": "Sandslash",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 29,
+    "Nombre": "Nidoran♀",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 30,
+    "Nombre": "Nidorina",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 31,
+    "Nombre": "Nidoqueen",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 32,
+    "Nombre": "Nidoran♂",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 33,
+    "Nombre": "Nidorino",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 34,
+    "Nombre": "Nidoking",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 35,
+    "Nombre": "Clefairy",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 36,
+    "Nombre": "Clefable",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 37,
+    "Nombre": "Vulpix",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 38,
+    "Nombre": "Ninetales",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 39,
+    "Nombre": "Jigglypuff",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 40,
+    "Nombre": "Wigglytuff",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 41,
+    "Nombre": "Zubat",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 42,
+    "Nombre": "Golbat",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 43,
+    "Nombre": "Oddish",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 44,
+    "Nombre": "Gloom",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 45,
+    "Nombre": "Vileplume",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 46,
+    "Nombre": "Paras",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 47,
+    "Nombre": "Parasect",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 48,
+    "Nombre": "Venonat",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 49,
+    "Nombre": "Venomoth",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 50,
+    "Nombre": "Diglett",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 51,
+    "Nombre": "Dugtrio",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 52,
+    "Nombre": "Meowth",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 53,
+    "Nombre": "Persian",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 54,
+    "Nombre": "Psyduck",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 55,
+    "Nombre": "Golduck",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 56,
+    "Nombre": "Mankey",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 57,
+    "Nombre": "Primeape",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 58,
+    "Nombre": "Growlithe",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 59,
+    "Nombre": "Arcanine",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 60,
+    "Nombre": "Poliwag",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 61,
+    "Nombre": "Poliwhirl",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 62,
+    "Nombre": "Poliwrath",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 63,
+    "Nombre": "Abra",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 64,
+    "Nombre": "Kadabra",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 65,
+    "Nombre": "Alakazam",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 66,
+    "Nombre": "Machop",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 67,
+    "Nombre": "Machoke",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 68,
+    "Nombre": "Machamp",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 69,
+    "Nombre": "Bellsprout",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 70,
+    "Nombre": "Weepinbell",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 71,
+    "Nombre": "Victreebel",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 72,
+    "Nombre": "Tentacool",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 73,
+    "Nombre": "Tentacruel",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 74,
+    "Nombre": "Geodude",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 75,
+    "Nombre": "Graveler",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 76,
+    "Nombre": "Golem",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 77,
+    "Nombre": "Ponyta",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 78,
+    "Nombre": "Rapidash",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 79,
+    "Nombre": "Slowpoke",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 80,
+    "Nombre": "Slowbro",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 81,
+    "Nombre": "Magnemite",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 82,
+    "Nombre": "Magneton",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 83,
+    "Nombre": "Farfetch’d",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 84,
+    "Nombre": "Doduo",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 85,
+    "Nombre": "Dodrio",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 86,
+    "Nombre": "Seel",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 87,
+    "Nombre": "Dewgong",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 88,
+    "Nombre": "Grimer",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 89,
+    "Nombre": "Muk",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 90,
+    "Nombre": "Shellder",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 91,
+    "Nombre": "Cloyster",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 92,
+    "Nombre": "Gastly",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 93,
+    "Nombre": "Haunter",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 94,
+    "Nombre": "Gengar",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 95,
+    "Nombre": "Onix",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 96,
+    "Nombre": "Drowzee",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 97,
+    "Nombre": "Hypno",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 98,
+    "Nombre": "Krabby",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 99,
+    "Nombre": "Kingler",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 100,
+    "Nombre": "Voltorb",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 101,
+    "Nombre": "Electrode",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 102,
+    "Nombre": "Exeggcute",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 103,
+    "Nombre": "Exeggutor",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 104,
+    "Nombre": "Cubone",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 105,
+    "Nombre": "Marowak",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 106,
+    "Nombre": "Hitmonlee",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 107,
+    "Nombre": "Hitmonchan",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 108,
+    "Nombre": "Lickitung",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 109,
+    "Nombre": "Koffing",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 110,
+    "Nombre": "Weezing",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 111,
+    "Nombre": "Rhyhorn",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 112,
+    "Nombre": "Rhydon",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 113,
+    "Nombre": "Chansey",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 114,
+    "Nombre": "Tangela",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 115,
+    "Nombre": "Kangaskhan",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 116,
+    "Nombre": "Horsea",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 117,
+    "Nombre": "Seadra",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 118,
+    "Nombre": "Goldeen",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 119,
+    "Nombre": "Seaking",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 120,
+    "Nombre": "Staryu",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 121,
+    "Nombre": "Starmie",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 122,
+    "Nombre": "Mr. Mime",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 123,
+    "Nombre": "Scyther",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 124,
+    "Nombre": "Jynx",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 125,
+    "Nombre": "Electabuzz",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 126,
+    "Nombre": "Magmar",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 127,
+    "Nombre": "Pinsir",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 128,
+    "Nombre": "Tauros",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 129,
+    "Nombre": "Magikarp",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 130,
+    "Nombre": "Gyarados",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 131,
+    "Nombre": "Lapras",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 132,
+    "Nombre": "Ditto",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 133,
+    "Nombre": "Eevee",
+    "Obtenido": 1
+  },
+  {
+    "Nº": 134,
+    "Nombre": "Vaporeon",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 135,
+    "Nombre": "Jolteon",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 136,
+    "Nombre": "Flareon",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 137,
+    "Nombre": "Porygon",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 138,
+    "Nombre": "Omanyte",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 139,
+    "Nombre": "Omastar",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 140,
+    "Nombre": "Kabuto",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 141,
+    "Nombre": "Kabutops",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 142,
+    "Nombre": "Aerodactyl",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 143,
+    "Nombre": "Snorlax",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 144,
+    "Nombre": "Articuno",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 145,
+    "Nombre": "Zapdos",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 146,
+    "Nombre": "Moltres",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 147,
+    "Nombre": "Dratini",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 148,
+    "Nombre": "Dragonair",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 149,
+    "Nombre": "Dragonite",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 150,
+    "Nombre": "Mewtwo",
+    "Obtenido": 0
+  },
+  {
+    "Nº": 151,
+    "Nombre": "Mew",
+    "Obtenido": 0
+  }
+]

@@ -1,3 +1,4 @@
+// components/PokemonSearch.tsx
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
@@ -24,7 +25,7 @@ export default function PokemonSearch({
     const res = await fetch("/api/update", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ Nombre: selected.Nombre, Obtenido: 1 }),
+      body: JSON.stringify({ Nombre: selected.Nombre }),
     });
     const result = await res.json();
 
@@ -44,7 +45,7 @@ export default function PokemonSearch({
     const res = await fetch("/api/update", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ Nombre: selected.Nombre, Obtenido: 0 }),
+      body: JSON.stringify({ Nombre: selected.Nombre }),
     });
     const result = await res.json();
 

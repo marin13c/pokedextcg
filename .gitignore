@@ -3,7 +3,7 @@ node_modules/
 
 # Build output
 .next/
-/dist/
+dist/
 # Next.js specific files
 .next/cache/
 .next/static/

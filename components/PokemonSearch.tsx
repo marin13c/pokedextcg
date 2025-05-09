@@ -13,7 +13,7 @@ export default function PokemonSearch({
 
   useEffect(() => {
     // Cargar el JSON desde la carpeta public
-    fetch("/pokemons.json")  // Asegúrate de que la ruta sea correcta
+   fetch("https://marin13c.github.io/pokedextcg/pokemons.json") 
       .then((response) => response.json())
       .then((data) => setPokemons(data))
       .catch((error) => console.error("Error al cargar el JSON:", error));

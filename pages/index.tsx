@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PokemonSearch from "../components/PokemonSearch";
 import ProgressChart from "../components/ProgressChart";
-import ObtainedPokemonsList from "../components/ObtainedPokemonsList.tsx";
+import ObtainedPokemonsList from "../components/ObtainedPokemonsList";
 
 export default function Home() {
   const [pokemons, setPokemons] = useState<any[]>([]);

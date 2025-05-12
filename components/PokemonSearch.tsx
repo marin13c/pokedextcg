@@ -13,7 +13,7 @@ export default function PokemonSearch({
 
   useEffect(() => {
     // Cargar el JSON desde la carpeta public
-   fetch("https://marin13c.github.io/pokedextcg/pokemons.json") 
+    fetch("/pokemons.json")
       .then((response) => response.json())
       .then((data) => setPokemons(data))
       .catch((error) => console.error("Error al cargar el JSON:", error));
@@ -28,6 +28,23 @@ export default function PokemonSearch({
     setSelected(p);
   };
 
+  // Función para actualizar el campo "Obtenido" en el JSON local
+const updatePokemonInLocalFile = async (updatedPokemons: any[]) => {
+  try {
+    const response = await fetch("/api/updatePokemon", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ pokemons: updatedPokemons }),
+    });
+
+
+  } catch (error) {
+    console.error("Error al actualizar localmente:", error);
+    toast.error("Error al actualizar el archivo.");
+  }
+};
+
+  // Marcar como obtenido
   const markAsObtained = async () => {
     const updatedPokemons = pokemons.map((p) =>
       p.Nombre === selected.Nombre ? { ...p, Obtenido: 1 } : p
@@ -35,8 +52,12 @@ export default function PokemonSearch({
     setPokemons(updatedPokemons);
     setSelected({ ...selected, Obtenido: 1 });
     toast.success(`¡${selected.Nombre} marcado como obtenido!`);
+
+    // Actualizar el archivo local
+    await updatePokemonInLocalFile(updatedPokemons);
   };
 
+  // Desmarcar como obtenido
   const unmarkAsObtained = async () => {
     const updatedPokemons = pokemons.map((p) =>
       p.Nombre === selected.Nombre ? { ...p, Obtenido: 0 } : p
@@ -44,6 +65,9 @@ export default function PokemonSearch({
     setPokemons(updatedPokemons);
     setSelected({ ...selected, Obtenido: 0 });
     toast.success(`¡${selected.Nombre} desmarcado como obtenido!`);
+
+    // Actualizar el archivo local
+    await updatePokemonInLocalFile(updatedPokemons);
   };
 
   return (

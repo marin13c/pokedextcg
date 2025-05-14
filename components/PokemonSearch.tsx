@@ -1,4 +1,4 @@
-//update 
+//update
 
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
@@ -15,7 +15,7 @@ export default function PokemonSearch({
 
   useEffect(() => {
     // Cargar el JSON desde la carpeta public
-    fetch("/pokemons.json")
+    fetch("http://192.168.100.12:3000/pokemon")
       .then((response) => response.json())
       .then((data) => setPokemons(data))
       .catch((error) => console.error("Error al cargar el JSON:", error));
@@ -47,31 +47,55 @@ const updatePokemonInLocalFile = async (updatedPokemons: any[]) => {
 };
 
   // Marcar como obtenido
-  const markAsObtained = async () => {
+const markAsObtained = async () => {
+  const numero = selected.Numero;
+  const estado = 1;
+
+  try {
+    // Llamar al backend externo
+    await fetch(`http://192.168.100.12:3000/pokemon/${numero}/estado/${estado}`, {
+      method: "PUT",
+    });
+
+    // Actualizar localmente
     const updatedPokemons = pokemons.map((p) =>
       p.Nombre === selected.Nombre ? { ...p, Obtenido: 1 } : p
     );
     setPokemons(updatedPokemons);
     setSelected({ ...selected, Obtenido: 1 });
     toast.success(`¡${selected.Nombre} marcado como obtenido!`);
-
-    // Actualizar el archivo local
     await updatePokemonInLocalFile(updatedPokemons);
-  };
+  } catch (error) {
+    console.error("Error al actualizar en el backend:", error);
+    toast.error("Error al marcar como obtenido.");
+  }
+};
+
 
   // Desmarcar como obtenido
-  const unmarkAsObtained = async () => {
+const unmarkAsObtained = async () => {
+  const numero = selected.Numero;
+  const estado = 0;
+
+  try {
+    // Llamar al backend externo
+    await fetch(`http://192.168.100.12:3000/pokemon/${numero}/estado/${estado}`, {
+      method: "PUT",
+    });
+
+    // Actualizar localmente
     const updatedPokemons = pokemons.map((p) =>
       p.Nombre === selected.Nombre ? { ...p, Obtenido: 0 } : p
     );
     setPokemons(updatedPokemons);
     setSelected({ ...selected, Obtenido: 0 });
     toast.success(`¡${selected.Nombre} desmarcado como obtenido!`);
-
-    // Actualizar el archivo local
     await updatePokemonInLocalFile(updatedPokemons);
-  };
-
+  } catch (error) {
+    console.error("Error al actualizar en el backend:", error);
+    toast.error("Error al desmarcar como obtenido.");
+  }
+};
   return (
     <div>
       <input
@@ -94,12 +118,12 @@ const updatePokemonInLocalFile = async (updatedPokemons: any[]) => {
       {selected && (
         <div className="mt-4 p-4 border rounded bg-gray-50 flex items-center gap-4">
           <img
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${selected.Nº}.png`}
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${selected.Numero}.png`}
             alt={selected.Nombre}
             className="w-24 h-24"
           />
           <div>
-            <p><strong>N°:</strong> {selected.Nº}</p>
+            <p><strong>N°:</strong> {selected.Numero}</p>
             <p><strong>Nombre:</strong> {selected.Nombre}</p>
             <p><strong>Obtenido:</strong> {selected.Obtenido ? "Sí" : "No"}</p>
             {!selected.Obtenido ? (

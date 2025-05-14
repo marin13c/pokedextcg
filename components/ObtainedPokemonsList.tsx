@@ -15,7 +15,7 @@ export default function ObtainedPokemonsList({
         if (!pokemon) return null;
 
         // URL de la imagen (puedes ajustar según tu fuente de imágenes)
-        const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.Nº}.png`;
+        const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.Numero}.png`;
 
         return (
           <div
@@ -27,7 +27,7 @@ export default function ObtainedPokemonsList({
               alt={pokemon.Nombre}
               className="w-24 h-24 mx-auto mb-2"
             />
-            <p className="font-semibold">{pokemon.Nº}</p>
+            <p className="font-semibold">{pokemon.Numero}</p>
             <p>{pokemon.Nombre}</p>
           </div>
         );
